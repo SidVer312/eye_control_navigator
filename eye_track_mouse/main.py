@@ -6,6 +6,8 @@ cam = cv2.VideoCapture(0)
 face_mesh = mp.solutions.face_mesh.FaceMesh(refine_landmarks=True)
 screen_h, screen_w = pyautogui.size()
 
+print("Copyright (c) 2022 Siddhartha Verma")
+
 while True:
     _, frame = cam.read()
     frame = cv2.flip(frame, 1)
